@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
+// styles
 import "./App.css";
+// components
+import CommentSection from "./components/CommentSection/";
+// data
+import { comments } from "./comments.json";
 
 function App() {
   return (
     <div className="container">
-      <h1 className="center">Hello World!</h1>
+      <CommentSection comments={comments} />
     </div>
   );
 }
